@@ -19,7 +19,7 @@ void bfs(int v) {
 
 void dfs(int v) {
   vis[v] = 1;
-  for (int i = 1; i < n; i++) {
+  for (int i = 1; i <= n; i++) {
     if (adj[v][i] == 1 && vis[i] == 0) {
       vis[i] = 1;
       printf("%d ", i);
